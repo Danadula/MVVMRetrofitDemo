@@ -1,0 +1,90 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_huge">18dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <dimen name="logoImgHeight">150dp</dimen>
+    <dimen name="logoImgWidth">150dp</dimen>
+
+    <dimen name="headerTextSize">25sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="buttonHeight">60dp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+
+    <dimen name="pv_pin_view_item_size">40dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+    <dimen name="common_padding">5dp</dimen>
+
+    //login_screen_icon_dimensions
+    <dimen name="icon_layout">200dp</dimen>
+    <dimen name="icon_layout_marginTop">15dp</dimen>
+
+    //login_screen_text_layout
+    <dimen name="text_layout">10dp</dimen>
+    <dimen name="drawablePadding">10dp</dimen>
+
+    //Button_layout
+    <dimen name="button_layout">10dp</dimen>
+
+    //forget_user_name
+    <dimen name="relative_layout_width">339dp</dimen>
+    <dimen name="relative_layout_height">390dp</dimen>
+
+    //forget_password
+    <dimen name="forget_password_relative_layout_height">420dp</dimen>
+    <dimen name="forget_password_layout_margin_top">5dp</dimen>
+
+    //registration_screen and image_icon
+    <dimen name="margin">40dp</dimen>
+    <dimen name="button_layout_width">95dp</dimen>
+    <dimen name="button_layout_height">81dp</dimen>
+    <dimen name="margin_corner">8dp</dimen>
+    <dimen name="margin_top">90dp</dimen>
+
+    //forget_password image_icon
+    <dimen name="image_layout_width">117dp</dimen>
+    <dimen name="image_layout_height">97dp</dimen>
+    <dimen name="icon_margin_top">50dp</dimen>
+
+    <dimen name="header_size">16sp</dimen>
+    <dimen name="x_xlarge_text_size">22sp</dimen>
+    <dimen name="spacing_medium">10dp</dimen>
+    <dimen name="z_card">2dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="spacing_x_medium">12dp</dimen>
+
+    <dimen name="underline_top_spacing">8dp</dimen>
+    <dimen name="underline_bottom_spacing">4dp</dimen>
+    <dimen name="error_label_spacing">12dp</dimen>
+
+    <dimen name="floating_label_top_spacing">4dp</dimen>
+    <dimen name="floating_label_bottom_spacing">8dp</dimen>
+    <dimen name="floating_label_inside_spacing">12dp</dimen>
+
+    <dimen name="right_left_spinner_padding">8dp</dimen>
+
+    <dimen name="label_text_size">12sp</dimen>
+    <dimen name="label_text_size1">10sp</dimen>
+
+    <dimen name="min_content_height">20dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_12">12sp</dimen>
+</resources>

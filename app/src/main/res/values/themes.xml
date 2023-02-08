@@ -1,0 +1,239 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MVVMRetrofitExample" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorTertiary">@color/white</item>
+
+        <item name="colorContainer">@color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+        <item name="buttonStyle">@color/colorPrimary</item>
+
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/textColorHint</item>
+        <item name="colorSecondaryVariant">@color/hintTextColor</item>
+        <item name="colorOnSecondary">@color/passwordToggleTint</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="CardWidgetStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:textColorHint">#525151</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DrawerTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Outline_box" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="colorOutline">@color/dark_blue</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorOnPrimary">#1C37E8</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+        </item>
+    </style>
+
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="date_picker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyThemeOverlay_Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="AppTheme_as" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="edt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@android:color/black</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorGray</item>
+        <!-- <item name="colorOnSurface">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="hintTextAppearance">@style/HintText</item>-->
+        <item name="hintTextAppearance">@style/TextAppearance.AppTheme.TextInputLayout.HintTextAlt
+        </item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.TextInputLayout.HintTextAlt" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PinWidget" />
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Button" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="btn_continue" parent="@style/Base.Widget.AppCompat.Button.Colored">
+        <!--<item name="background">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.EditTextBaseStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="WhiteButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/white</item>
+    </style>
+
+    <!-- custom dialogue view -->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- custom normal activity theme -->
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- custom dialog activity theme -->
+    <style name="AppTheme.Dialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <!-- removing the dialog's action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="fullScreenDialogue" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+        <item name="android:padding">1dp</item>
+
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

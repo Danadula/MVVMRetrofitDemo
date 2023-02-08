@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MVVMRetrofitExample</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="logout">Logout</string>
+
+    <string name="existing_login">Use your existing username and password to LOGIN here.</string>
+    <string name="don_t_have_an_account_sign_up"><p>Don\'t have an account?</p></string>
+    <string name="sign_up1">Sign up</string>
+    <string name="register_as_fleet_owner">Register as a Business Owner</string>
+    <string name="register_as_an_individual">Register as an Individual</string>
+    <string name="click_on_below_res">Click on below respective button to register an account with us.</string>
+    <string name="user_name">Username</string>
+    <string name="log_in">Login</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="forget_username">Forgot Username</string>
+    <string name="change_language">Change Language</string>
+    <string name="sign_up">SignUp</string>
+    <string name="contactUs">Contact US</string>
+    <string name="app_version_short">Version: 1.0.0</string>
+
+    <string name="logoutFromApp">Do you really want to logout from app?</string>
+    <string name="conform">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_name">Name</string>
+    <string name="enter_email">Email ID</string>
+    <string name="enter_password">Password</string>
+    <string name="do_your_registration_here">Do Your User Registration Here.</string>
+</resources>

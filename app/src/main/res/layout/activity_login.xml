@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="?attr/colorPrimary"
+    android:noHistory="true"
+    tools:context=".view.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/roundedimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/white_logo5"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/iran_sans_mobile"
+                android:gravity="center"
+                android:text="@string/existing_login"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/colorOnPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp"
+            tools:ignore="RtlHardcoded">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_input_layout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="?attr/colorSecondary"
+                app:hintTextColor="?attr/colorSecondaryVariant"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:textAlignment="viewStart"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_layout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="?attr/colorSecondary"
+                app:hintTextColor="?attr/colorSecondaryVariant"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="?attr/colorOnSecondary"
+                app:startIconDrawable="@drawable/ic_password_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:maxLength="20"
+                    android:textAlignment="viewStart"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Button for Sign in-->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/log_in"
+                android:textColor="#fff"
+                android:textSize="@dimen/header_size" />
+
+            <!--Forget Password & Forget Username-->
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/header_size" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/forget_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:text="@string/forget_username"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/header_size"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_layout1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_5"
+                android:layout_weight=".6"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:inputType="textNoSuggestions"
+                android:text="@string/don_t_have_an_account_sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="2dp"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"
+                android:text="@string/sign_up1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/copy_right"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_language"
+                style="@style/FlatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/change_language"
+                android:textSize="@dimen/header_size"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/forget_signup"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/text_layout"
+                android:layout_marginRight="@dimen/text_layout"
+                android:background="@color/colorPrimaryDark"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/user_signup1"
+                    style="@style/FlatButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingEnd="40dp"
+                    android:text="@string/sign_up"
+                    android:textSize="@dimen/header_size"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_contactUs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.25"
+                    android:gravity="end"
+                    android:text="@string/contactUs"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/copy_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:textColor="?attr/colorPrimary">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.5"
+                android:text="©2023 MY APP"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/app_version_short"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
