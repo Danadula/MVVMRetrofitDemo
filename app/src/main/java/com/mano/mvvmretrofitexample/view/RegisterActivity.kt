@@ -81,15 +81,11 @@ class RegisterActivity : AppCompatActivity() {
 
         if (TextUtils.isEmpty(email)) {
             binding.emailInputLayout.isErrorEnabled = true
-            binding.emailInputLayout.error = "Enter Username"
-            hasError = false
-        } else if (email.length < 4) {
-            binding.emailInputLayout.isErrorEnabled = true
-            binding.emailInputLayout.error = "Enter user name at least 4 characters"
+            binding.emailInputLayout.error = "Enter email id"
             hasError = false
         } else if (!Validator.isValidEmail(email)) {
             binding.emailInputLayout.isErrorEnabled = true
-            binding.emailInputLayout.error = "Enter valid email address"
+            binding.emailInputLayout.error = "Enter valid email id"
             hasError = false
         } else {
             binding.emailInputLayout.isErrorEnabled = false
